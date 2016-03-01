@@ -7,15 +7,6 @@ A sports catalog webserver that keeps track of different catalog items and displ
 ## Instructions
 Clone the package
 
-Run vagrant
-```
-cd vagrant
-vagrant up
-vagrant ssh
-```
-
-Inside vagrant shell
-
 initialize database
 ```
 cd /vagrant/catalog
@@ -25,16 +16,6 @@ python database_setup.py
 Populate database with dummy data
 ```
 python populate_catalog_with_dummy_data.py
-```
-
-Start the web server
-```
-python project.py
-```
-
-Launch webpage
-```
-Open a browser with URL http://localhost:5000/
 ```
 
 ## Files
