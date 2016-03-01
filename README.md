@@ -8,7 +8,7 @@ Deploy the web application (CatalogApp) on virtual server in Amazon's elastic co
 IP: 52.37.70.24
 PORT: 2200
 
-ssh -i <path_to_grader_private_key> grader@52.37.70.24 -p 2200
+ssh -i *path_to_grader_private_key* grader@52.37.70.24 -p 2200
 
 ### Access web app
 http://ec2-52-37-70-24.us-west-2.compute.amazonaws.com/
