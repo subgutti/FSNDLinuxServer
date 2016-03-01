@@ -17,8 +17,6 @@ import json
 import requests
 import os
 
-#app = Flask(__name__)
-
 # Connect to Database and create database session
 engine = create_engine('postgresql://catalog:udacity@localhost/catalog')
 Base.metadata.bind = engine
@@ -629,7 +627,3 @@ def dated_url_for(endpoint, **values):
                                      endpoint, filename)
             values['q'] = int(os.stat(file_path).st_mtime)
     return url_for(endpoint, **values)
-
-#if __name__ == '__main__':
-#    app.secret_key = 'super_secret_key'
-#    app.run(host='0.0.0.0')
