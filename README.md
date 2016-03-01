@@ -28,8 +28,6 @@ Here is the list of packages installed on the linux server to host the web app
   * fail2ban : Improve server security by stopping failed login attempts by users or bots and inform the owner (subgutt@gmail.com)
   * Nagios : Web interface to monitor the server. Configured it to send alerts to the owner (subgutti@gmail.com).
         Access it here : http://ec2-52-37-70-24.us-west-2.compute.amazonaws.com/nagios
-        username : nagiosadmin
-        password : udacity
 
 ### Host Catalog App
 In order to host the Catalog App I have made the below changes
