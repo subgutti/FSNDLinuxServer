@@ -32,11 +32,12 @@ Here is the list of packages installed on the linux server to host the web app
         password : udacity
 
 ### Host Catalog App
-In order to host the Catalog App I have made the below configuration changes
+In order to host the Catalog App I have made the below changes
   * Added an apache configuration file to host the Catalog app `/etc/apache2/sites-available/CatalogApp.conf`
   * Enabled the Catalog app configuration file using `sudo a2ensite CatalogApp`
   * As Apache uses .wsgi file to server, added a new .wsgi file in CatalogApp
   * Modified CatalogApp to use postgresql database rather than sqlite database
+  * Modified CatalogApp to use absolute path when reading files e.g client_secrets for Facebook and Google authentication
 
 ### Resources
   * [Flask](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps)
