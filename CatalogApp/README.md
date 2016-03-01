@@ -9,7 +9,7 @@ Clone the package
 
 initialize database
 ```
-cd /vagrant/catalog
+cd ./CatalogApp
 python database_setup.py
 ```
 
@@ -19,6 +19,13 @@ python populate_catalog_with_dummy_data.py
 ```
 
 ## Files
+
+####'__init__.py'
+Flask application logic
+
+####`catalogapp.wsgi`
+Apache uses the .wsgi file to server the flask app.
+
 ####`project.py`
 Main Flask application file that initializes the webserver and takes care of different http requests
 
